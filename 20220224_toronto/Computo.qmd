@@ -1,15 +1,15 @@
 ---
 title: "COMPUTO"
-subtitle: "A new born academic journal promoting reproducibility"
-institute: "Computo Editorial Board"
+subtitle: "*A new born academic journal promoting reproducibility*"
 footer: <https://computo.sfds.asso.fr</a>
-logo: img/logo_text_vertical.png
-date: "2022 Toronto Workshop on Reproducibility"
+logo: ../design/logo_text_vertical.svg
+date: "<small>2022 Toronto Workshop on Reproducibility</small>"
 format: 
   revealjs: 
     self-contained: true
     theme: [default, computo.scss]
     slide-number: true
+    smaller: true
     title-slide-attributes:
       data-background-image: img/logo_text_vertical.png
       data-background-size: 20%
@@ -17,7 +17,44 @@ format:
     preview-links: auto
 ---
 
-## About Computo
+## Facts in Stats/ML academic publications
+
+- Multiplication of academic journals and articles <br/>
+    *&#8594;	at the expense of quality / scientific accuracy?*
+- Lack of valorisation of computer/algorithmic developments and case studies
+- Saturation of existing solutions
+- Rapid evolution of tools 
+  - Great API (`Rstudio`, `VScode`)
+  - Scientific Publishing system (`quarto`, `Jupyter`)
+  - Integration / dynamics (`git(hub)`, `Actions`)
+
+::: {.callout-tip}
+## Computo's Board Positionong
+**Need to renew the mode of publication of scientific knowledge and know-how**
+::: 
+
+## Existings solutions
+
+### Standard academic journals
+
+*Statistics and Computing, Computational Statistics and Data Analysis, Journal of Computational and Graphical Statistics, JMLR, JRSS-B, JASA, ...*
+
+::: {.callout-warning}
+### Limitations
+Fixed format (non-dynamic typically, PDF) limiting reproducibility
+:::
+
+
+### Software journals
+
+*R journal, Journal of Statistical Software, Journal of Open Source Software, JMLR Machine Learning Open Source Software, ROpen-Sci...*
+
+::: {.callout-warning}
+### Limitations
+Congestion, language-centric, software documentation, not structured around a scientific question
+:::
+
+## Computo in a nutshell
 
 ::: {.callout-note}
 ### Aims and Scope
@@ -37,34 +74,6 @@ format:
 **At the submission stage!**
 :::
 
-## Facts in Stats/ML academic publications
-
-- Multiplication of academic journals and articles
-- Lack of valorisation of computer/algorithmic developments and case studies
-- Saturation of existing solutions
-- Rapid evolution of tools (Rstudio, Jupyter, git(hub), VScode)
-
-Need to renew the mode of publication of scientific knowledge and know-how
-
-## Limits of existings solutions {.smaller}
-
-### Standard academic journals
-
-Statistics and Computing, Computational Statistics and Data Analysis, Journal of Computational and Graphical Statistics, JMLR, JRSS-B, JASA, ...
-
-fixed format (tpypically, PDF) limiting reproducibility
-
-### Software journals
-
-`R` journal, Journal of Statistical Software, Journal of Open Source Software, JMLR Machine Learning Open Source Software, ROpen-Sci...
-
-Clogging, language-centric, fancy documentation, not structured around a scientific question
-
-### Other inspiring initiatives
-
-- Peer Community-In, Overlay journal (different spirit)
-- <https://rescience.github.io/> ("remake/redo" of existing works)
-- <https://distill.pub> (technically complicated)
 
 ## Editorial Board {.smaller}
 
@@ -105,104 +114,11 @@ CNRS, Université Grenoble Alpes</small>
 
 ![](img/nelle.jpg){width='180'} 
 
-
 :::
 
 ::::
 
 
-
-## About the Logo
-
-![](img/computo_concept.png)
-
-Computo’s logo has been designed by [Loïc Schwaller](https://loack.me/).
-
-## Some tests
-
-::: {.callout-note}
-### This is just a note
-
-Yep, that is it
-:::
-
-::: {.callout-warning}
-### This is just a note
-
-Yep, that is it
-:::
-
-::: {.callout-important}
-### This is just a note
-
-Yep, that is it
-:::
-
-::: {.callout-tip}
-### This is just a note
-
-Yep, that is it
-:::
-
-
-<!-- ## Contexte (général) -->
-
-<!-- ### Des publications en statistiques computationnelles -->
-
-<!-- - Multiplication du nombre des journaux et des publications  -->
-<!-- - Besoin de reproductibilité scientifique -->
-<!-- - Manque de valorisation des développements informatiques/algorithmiques et des études de cas -->
-<!-- - Saturation des solutions existantes -->
-<!-- - Évolution rapide des solutions (Rstudio, IPython, Jupyter) -->
-<!-- - Besoin de renouvellement du mode de publication des savoirs et savoir-faire scientifiques -->
-
-
-<!-- Constat partagé par l’éditorial du R-journal de juin 2017: -->
-
-<!-- \begin{quote} -->
-<!-- \scriptsize Articles introducing CRAN or Bioconductor packages — the most common kind of submission — should now provide broader context. We would like to encourage the submission of reviews and proposals, comparisons and the benchmarking of alternative implementations, and presentations of applications demonstrating how new or existing techniques can be applied in an area of current interest using R.  -->
-<!-- \end{quote} -->
-
-<!-- ## Limites de l'existant -->
-
-<!-- ### Revues académiques classiques -->
-
-<!-- \textit{\scriptsize Statistics and Computing, Computational Statistics and Data Analysis, Journal of Computational and Graphical Statistics, JMLR, JRSS-B, JASA, ...} -->
-
-<!-- $\rightsquigarrow$ \alert{format figé limitant la reproductibilité} -->
-
-<!-- ### Revues de codes -->
-
-<!-- \textit{\scriptsize R journal, Journal of Statistical Software, Journal of Open Source Software, JMLR Machine Learning Open Source Software, ROpen-Sci...} -->
-
-<!-- Engorgement, langage-centrées, vignette de package/module -->
-
-<!-- $\rightsquigarrow$ \alert{pas structuré autour d’une question scientifique de stat./ML} -->
-
-<!-- ### Autres revues (inspirantes!!) -->
-
-<!-- - Peer Community-In, Overlay journal (philosophie différente) -->
-<!-- - \url{https://rescience.github.io/} ("remake' de l'existant) -->
-<!-- - \url{https://distill.pub} (techniquement compliqué et pur IA) -->
-
-
-<!-- ## \alert{Computo}: une revue  académique -->
-
-<!-- ### Ligne éditoriale -->
-
-<!-- \begin{quote} -->
-<!-- \scriptsize Computo aims at \alert{promoting computational/algorithmic contributions in statistics and machine learning} that provide insight into which models or methods are more appropriate to address a specific scientific question. In order to achieve this goal, Computo goes beyond classical static publications by \alert{leveraging technical advances in literate programming and scientific reporting}. -->
-<!-- \end{quote} -->
-
-<!-- ### Comité éditorial -->
-
-<!-- C.-A. Azencott, J. Chiquet, R. Génuer, P. Neuvial, C. Robert, N. Varoquaux (stat $\leftrightarrow$ ML, appli $\leftrightarrow$ théorie, R $\leftrightarrow$ Python) -->
-
-<!-- \medskip -->
-
-<!-- ### Format "original" -->
-
-<!-- Contenu reproductible, dynamique/interactif; relectures publiques -->
 
 <!-- ## Fonctionnement: ingrédients -->
 
@@ -234,6 +150,31 @@ Yep, that is it
 
 <!-- \tikz[overlay,remember picture] \node[opacity=0.8, at=(current page.center)]{% -->
 <!--   \includegraphics[width=.9\paperwidth]{img/computo_process}}; -->
+
+
+
+## Some inspiring initiatives
+
+### Peer Community-In
+
+  Overlay journal (different spirit)
+  
+### ReScience
+  
+- <https://rescience.github.io/> ("remake/redo" of existing works)
+
+### distill
+
+- <https://distill.pub> (technically complicated), essentially Machine-learning 
+
+
+
+## About the Logo
+
+![](img/computo_concept.png)
+
+Computo’s logo has been designed by [Loïc Schwaller](https://loack.me/).
+
 
 <!-- ## Pour conclure -->
 
