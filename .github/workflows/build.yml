@@ -6,7 +6,7 @@ on:
 
 jobs:
   website:
-    name: Build slides for Computo
+    name: Build pres for Computo
     if: "contains(github.event.head_commit.message, 'build')"
     runs-on: "ubuntu-latest"
     steps:
