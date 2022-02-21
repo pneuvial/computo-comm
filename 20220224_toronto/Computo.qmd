@@ -1,8 +1,8 @@
 ---
 title: "COMPUTO"
 subtitle: "*A new born academic journal promoting reproducibility*"
-footer: <https://computo.sfds.asso.fr</a>
-logo: ../design/logo_text_vertical.svg
+footer: <https://computo.sfds.asso.fr>
+logo: img/logo_text_vertical.png
 date: "<small>2022 Toronto Workshop on Reproducibility</small>"
 format: 
   revealjs: 
@@ -118,39 +118,123 @@ CNRS, Université Grenoble Alpes</small>
 
 ::::
 
+## How does Computo work? (1/2)
+
+### 1. Advanced notebook System
+
+[https://quarto.org](https://quarto.org) (embed *Jupyter* and *RMarkdown*)
+
+  - Code (Python/Julia/R)
+  - Math ($\LaTeX$)
+  - Biblio ($bib\TeX$)
+  - Interactivity (HTML widget, CSS) 
+
+### 2. Git repository and services
+
+[github/github-action](https://github.com/features/actions)
+
+  - Continuous Integration (reproductibility script)
+  - Projects Management (submission, publication)
+  - Issues (reviewing, discussion)
+
+## How does Computo work? (2/2)
+
+### 3. Container service
+
+[binder](https://mybinder.readthedocs.io/)
+
+  - Easily to customize
+  - Easy to interface with github
+
+### 4. Reviewing system
+
+[Scholastica](https://app.scholasticahq.com/)
+
+  - Discussion between Editorial board
+  - Reviewer Invitation
+  - Anonymous exchanges between authors/reviewers 
+
+&#8594; Eventually published (as Issues)
+
+## Author point of view (1/3)
+
+### Step 0: setup a github repository
+
+::: {.fragment .fade-in}
+Copy [our template repository](https://github.com/computorg/template-computo-quarto) to use it as a starter
+:::
+
+### Step 1. write your contribution
+
+::: {.fragment .fade-in}
+Write your notebook as usual (Same spirit as Jupyter/Rmarkdown).
+:::
+
+### Step 2: configure your binder environment
+
+::: {.fragment .fade-in}
+file `environment.yml`
+
+```yaml
+name: computorbuild
+channels:
+  - conda-forge
+dependencies:
+  - jupyter
+  - numpy
+  - r-base=4.1.1
+```
+:::
+
+## Author point of view (2/3)
+
+### Step 3: proof reproducibility
+
+A `git push` will trigger build process on github
+``` yaml
+name: build
+on: push
+jobs:
+  computorticle:
+    runs-on: ubuntu-latest
+    steps: # [...]
+      - name: Installing dependencies with Miniconda
+        uses: conda-incubator/setup-miniconda@v2
+          environment-file: environment.yml
+        # [...]
+      - name: Rendering with Quarto
+        run: quarto render content.qmd
+        # [...]
+      - name: Deploying article on github pages
+        # [...]
+```        
+
+## Author point of view (3/3)
+
+### Step 4. submit
+
+If build is successful,
+
+  - An HTML version is pushed on a github-page
+  - A PDF version can be obtained via `chrome-print`
+  - a `binder` repos can be associated
+
+::: {.fragment .highlight-red}
+&#8594; Submit the PDF on Scholastica page
+:::
+
+::: {style="text-align: center; margin-top: 1em"}
+[See more in our quarto template](https://github.com/computorg/template-computo-quarto){preview-link="true" style="text-align: center"}
+:::
+
+## Author point of view: summary
+
+![](img/computo_process_authors.png){width=100%}
 
 
-<!-- ## Fonctionnement: ingrédients -->
+## Full process overview
 
-<!-- ### 1. Système de notebook \textit{avancé} -->
-
-<!-- Code (Python/Julia/R,...) + Math (\LaTeX/bib\TeX) + interactivité (widget + CSS) $\rightsquigarrow$ \alert{Jupyter-book}/\alert{Rmarkdown}  -->
-
-<!-- \medskip -->
-
-<!-- ### 2. Dépôt git et services associés -->
-
-<!-- Large diffusion, page web de la revue, intégration continue $\rightsquigarrow$ \alert{github} + \alert{github-action} -->
-
-<!-- \medskip -->
-
-<!-- ### 3. Service de conteneur -->
-
-<!-- Customisable + Interfaçable avec github $\rightsquigarrow$ \alert{binder} -->
-
-<!-- \medskip -->
-
-<!-- ### 4. Système de relecture -->
-
-<!-- Échanges simples entre auteurs/relecteurs/comité édtiorial $\rightsquigarrow$ \alert{Scholastica} -->
-
-<!-- \medskip -->
-
-<!-- ## Fonctionnement: processus complet -->
-
-<!-- \tikz[overlay,remember picture] \node[opacity=0.8, at=(current page.center)]{% -->
-<!--   \includegraphics[width=.9\paperwidth]{img/computo_process}}; -->
-
+![](img/computo_process.png)
 
 
 ## Some inspiring initiatives
