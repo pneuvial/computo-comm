@@ -213,7 +213,7 @@ jobs:
 
 ### Step 4. submit
 
-If build is successful,
+If the build process is successful,
 
   - An HTML version is pushed on a github-page
   - A PDF version can be obtained via `chrome-print`
@@ -232,25 +232,42 @@ If build is successful,
 ![](img/computo_process_authors.png){width=100%}
 
 
+## Editor point of view
+
+Once the reviewing process has ended (successfully!)
+
+- Copy the author's repository
+- Format to the final
+- Publish review as issues
+- Add entry on the Journal web site referring
+  - github repository
+  - data repository
+  - reviewing
+
+::: {style="text-align: center; margin-top: 1em"}
+[See more in our mock contribution](https://computo.sfds.asso.fr/publications/){preview-link="true" style="text-align: center"}
+:::
+
 ## Full process overview
 
 ![](img/computo_process.png)
 
-
 ## Some inspiring initiatives
 
-### Peer Community-In
+### Distill
 
-  Overlay journal (different spirit)
-  
+<https://distill.pub>, a journal essentially in Machine/Deep-learning 
+
 ### ReScience
-  
-- <https://rescience.github.io/> ("remake/redo" of existing works)
 
-### distill
+<https://rescience.github.io/>, a journal publishing "Remake/Redo" of existing works to prove reproducibility
 
-- <https://distill.pub> (technically complicated), essentially Machine-learning 
+### Peer Community-In (aka PCI) 
 
+<https://peercommunityin.org/>, a Free recommendation process of scientific preprints based on peer reviews
+
+- Work with communities of *recommenders*
+- We plan to create a PCI for Computo to bypass Scholastica
 
 
 ## About the Logo
@@ -258,15 +275,3 @@ If build is successful,
 ![](img/computo_concept.png)
 
 Computo’s logo has been designed by [Loïc Schwaller](https://loack.me/).
-
-
-<!-- ## Pour conclure -->
-
-<!-- ### À venir (très)  prochainement -->
-
-<!-- - remake de papiers à succès (t-SNE; Stability Selection; etc) en guise d'échantillons -->
-<!-- - invitations à soumettre (auteurs/autrices "ciblé.e.s") -->
-<!-- - ouverture officielle à la rentrée d'automne 2021 -->
-
-<!-- \begin{center} Un tour sur le site \url{https://computo.sfds.asso.fr} \end{center} -->
-
