@@ -64,13 +64,13 @@ Congestion, language-centric, software documentation, not structured around a sc
 ::: {.callout-tip}
 ### Open and reproducible 
 - reproducibility of numerical results is a necessary condition for publication
-- all necessary data and code mus be available. 
-- reviews are open (with possible anonymous reviewers)
+- all necessary data and code must be available. 
+- reviews are open (reviewers can remain anonymous)
 :::
 
 
 ::: {.callout-important}
-### Assessing reproductibility
+### Assessing reproducibility
 **At the submission stage!**
 :::
 
@@ -133,7 +133,7 @@ CNRS, Université Grenoble Alpes</small>
 
 [github/github-action](https://github.com/features/actions)
 
-  - Continuous Integration (reproductibility script)
+  - Continuous Integration (reproducibility script)
   - Projects Management (submission, publication)
   - Issues (reviewing, discussion)
 
@@ -143,14 +143,14 @@ CNRS, Université Grenoble Alpes</small>
 
 [binder](https://mybinder.readthedocs.io/)
 
-  - Easily to customize
+  - Easy to customize
   - Easy to interface with github
 
 ### 4. Reviewing system
 
 [Scholastica](https://app.scholasticahq.com/)
 
-  - Discussion between Editorial board
+  - Discussion among Editorial board
   - Reviewer Invitation
   - Anonymous exchanges between authors/reviewers 
 
@@ -237,15 +237,15 @@ If the build process is successful,
 Once the reviewing process has ended (successfully!)
 
 - Copy the author's repository
-- Format to the final
-- Publish review as issues
+- Format to the final version
+- Publish reviews as issues
 - Add entry on the Journal web site referring
   - github repository
   - data repository
   - reviewing
 
 ::: {style="text-align: center; margin-top: 1em"}
-[See more in our mock contribution](https://computo.sfds.asso.fr/publications/){preview-link="true" style="text-align: center"}
+[See our mock contribution for more](https://computo.sfds.asso.fr/publications/){preview-link="true" style="text-align: center"}
 :::
 
 ## Full process overview
