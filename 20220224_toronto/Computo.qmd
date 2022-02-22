@@ -224,7 +224,7 @@ If the build process is successful,
 :::
 
 ::: {style="text-align: center; margin-top: 1em"}
-[See more in our quarto template](https://github.com/computorg/template-computo-quarto){preview-link="true" style="text-align: center"}
+[See our quarto template for more](https://github.com/computorg/template-computo-quarto){preview-link="true" style="text-align: center"}
 :::
 
 ## Author point of view: summary
