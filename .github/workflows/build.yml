@@ -20,7 +20,7 @@ jobs:
         shell: bash -l {0}
         run: |
             mkdir _build
-            cd 20220224_toronto/
+            cd last/
             quarto render Computo.qmd
             mv Computo.html ../_build/index.html
 
