@@ -260,6 +260,7 @@ Once the reviewing process has ended (successfully!)
 
 - framework functional + doi, ISSN, etc.
 - 1 published article, 3 articles under review, 2 or 3 promises of submissions
+- 3 talks in reproducibilty workshops (Toronto, Humastica, Journée libre accès)
 - difficulty to find reviewers
 - neither technical nor human support
 
