@@ -1,9 +1,9 @@
 ---
 title: "COMPUTO"
-subtitle: "*A new born academic journal promoting reproducibility*"
+subtitle: "*A new born academic journal promoting reproducibility*<br/> Supported by the French Statistical Society"
 footer: <https://computo.sfds.asso.fr>
 logo: img/logo_text_vertical.png
-date: "<small>Last update: March 2022</small>"
+date: "<small>Last update: June 2022</small>"
 format: 
   revealjs: 
     self-contained: true
@@ -16,6 +16,54 @@ format:
       data-background-position: top 30px left	30px
     preview-links: auto
 ---
+
+## Editorial Board {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+#### Chloé-Agathe Azencott
+
+<small>Machine Learning for therapeutic research <br/>
+Mines ParisTech, Inserm, Institut Curie</small>
+
+![](img/chloe.jpg){width='180'} 
+
+#### Pierre Neuvial
+
+<small>Statistics,  <br/>
+CNRS, Institut de Mathématiques de Toulouse</small>
+
+![](img/pierre.jpg){width='180'}
+
+:::
+
+::: {.column width="50%"}
+
+#### Julien Chiquet (Chief Editor)
+
+<small>Statistical learning for life science<br />
+Université Paris-Saclay, AgroParisTech, INRAE</small>
+
+![](img/julien.jpg){width='180'}
+
+
+#### Nelle Varoquaux
+
+<small>Machine learning and causal inference for genomics<br/>
+CNRS, Université Grenoble Alpes</small>
+
+![](img/nelle.jpg){width='180'} 
+
+:::
+
+::::
+
+##
+
+![](img/computo_website.png)
+
 
 ## Facts in Stats/ML academic publications
 
@@ -74,51 +122,12 @@ Congestion, language-centric, software documentation, not structured around a sc
 **At the submission stage!**
 :::
 
+## How does Computo work? (1/3)
 
-## Editorial Board {.smaller}
-
-:::: {.columns}
-
-::: {.column width="50%"}
-
-#### Chloé-Agathe Azencott
-
-<small>Machine Learning for therapeutic research <br/>
-Mines ParisTech, Inserm, Institut Curie</small>
-
-![](img/chloe.jpg){width='180'} 
-
-#### Pierre Neuvial
-
-<small>Statistics,  <br/>
-CNRS, Institut de Mathématiques de Toulouse</small>
-
-![](img/pierre.jpg){width='180'}
-
-:::
-
-::: {.column width="50%"}
-
-#### Julien Chiquet (Chief Editor)
-
-<small>Statistical learning for life science<br />
-Université Paris-Saclay, AgroParisTech, INRAE</small>
-
-![](img/julien.jpg){width='180'}
+![](img/computo_github-group.png)
 
 
-#### Nelle Varoquaux
-
-<small>Machine learning and causal inference for genomics<br/>
-CNRS, Université Grenoble Alpes</small>
-
-![](img/nelle.jpg){width='180'} 
-
-:::
-
-::::
-
-## How does Computo work? (1/2)
+## How does Computo work? (2/3)
 
 ### 1. Advanced notebook System
 
@@ -137,7 +146,7 @@ CNRS, Université Grenoble Alpes</small>
   - Projects Management (submission, publication)
   - Issues (reviewing, discussion)
 
-## How does Computo work? (2/2)
+## How does Computo work? (3/3)
 
 ### 3. Container service
 
@@ -156,23 +165,22 @@ CNRS, Université Grenoble Alpes</small>
 
 &#8594; Eventually published (as Issues)
 
-## Author point of view (1/3)
+## Author point of view (1/4)
 
 ### Step 0: setup a github repository
 
-::: {.fragment .fade-in}
 Copy [our template repository](https://github.com/computorg/template-computo-quarto) to use it as a starter
-:::
+
+![](img/computo_template-quarto-screenshot_1.png)
+
+## Author point of view (2/4)
 
 ### Step 1. write your contribution
 
-::: {.fragment .fade-in}
 Write your notebook as usual (Same spirit as Jupyter/Rmarkdown).
-:::
 
-### Step 2: configure your binder environment
+### Step 2: configure your conda/binder environment
 
-::: {.fragment .fade-in}
 file `environment.yml`
 
 ```yaml
@@ -182,11 +190,10 @@ channels:
 dependencies:
   - jupyter
   - numpy
-  - r-base=4.1.1
+  - r-base=4.2.0
 ```
-:::
 
-## Author point of view (2/3)
+## Author point of view (3/4)
 
 ### Step 3: proof reproducibility
 
@@ -209,7 +216,7 @@ jobs:
         # [...]
 ```        
 
-## Author point of view (3/3)
+## Author point of view (4/4)
 
 ### Step 4. submit
 
@@ -227,11 +234,6 @@ If the build process is successful,
 [See our quarto template for more](https://github.com/computorg/template-computo-quarto){preview-link="true" style="text-align: center"}
 :::
 
-## Author point of view: summary
-
-![](img/computo_process_authors.png){width=100%}
-
-
 ## Editor point of view
 
 Once the reviewing process has ended (successfully!)
@@ -248,30 +250,45 @@ Once the reviewing process has ended (successfully!)
 [See our mock contribution for more](https://computo.sfds.asso.fr/publications/){preview-link="true" style="text-align: center"}
 :::
 
-## Full process overview
+## First published paper
 
-![](img/computo_process.png)
+<https://github.com/computorg/published-202204-deeplearning-occupancy-lynx>
 
-## Some inspiring initiatives
+![](img/computo_repo-published.png)
 
-### Distill
+## Computo's first year review  {.smaller}
 
-<https://distill.pub>, a journal essentially in Machine/Deep-learning 
+- framework functional + doi, ISSN, etc.
+- 1 published article, 3 articles under review, 2 or 3 promises of submissions
+- difficulty to find reviewers
+- neither technical nor human support
 
-### ReScience
-
-<https://rescience.github.io/>, a journal publishing "Remake/Redo" of existing works to prove reproducibility
-
-### Peer Community-In (aka PCI) 
-
-<https://peercommunityin.org/>, a Free recommendation process of scientific preprints based on peer reviews
-
-- Work with communities of *recommenders*
-- We plan to create a PCI for Computo to bypass Scholastica
-
-
-## About the Logo
+### About the Logo
 
 ![](img/computo_concept.png)
 
-Computo’s logo has been designed by [Loïc Schwaller](https://loack.me/).
+## How could you help?
+
+### Authoring
+
+[Submit your work!](https://computo.sfds.asso.fr/submit/)
+
+### Reviewing
+
+**Volunteer** by filling this form: <https://forms.gle/P9iYJANuNM4WTVHDA>
+
+### Feeding-in Computo with Peer-community-in
+
+*Get involved in a stat/ML PCI to feed Computo*
+
+- Existing skeleton: *CompStat* PCI <https://compstat.peercommunityin.org/>
+- Identified scientific leader: Christian Robert
+- Technical/Web support **needed**
+- Active community of recommenders **needed**
+
+
+<!-- ## About the Logo -->
+
+<!-- ![](img/computo_concept.png) -->
+
+<!-- Computo’s logo has been designed by [Loïc Schwaller](https://loack.me/). -->
