@@ -1,9 +1,10 @@
 ---
 title: "COMPUTO"
-subtitle: "*A new born academic journal promoting reproducibility*<br/> Supported by the French Statistical Society"
+subtitle: "Un journal académique en Statistique et Machine-Learrning promouvant la reproductibilité et les modes de publication alternatifs"
 footer: <https://computo.sfds.asso.fr>
 logo: img/logo_text_vertical.png
-date: "<small>Last update: June 2022</small>"
+date: last-modified
+lang: fr
 format: 
   revealjs: 
     self-contained: true
@@ -17,279 +18,404 @@ format:
     preview-links: auto
 ---
 
-## Editorial Board {.smaller}
+## Comité éditorial et support technique {.smaller}
 
 :::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="38%"}
 
-#### Chloé-Agathe Azencott
+#### Julien Chiquet (Éditeur en chef)
 
-<small>Machine Learning for therapeutic research <br/>
-Mines ParisTech, Inserm, Institut Curie</small>
+<small>Apprentissage stat. pour le vivant<br />
+DR INRAE, Université Paris-Saclay</small>
 
-![](img/chloe.jpg){width='180'} 
+![](../people/julien.jpg){width='120'}
 
-#### Pierre Neuvial
+#### François-David Collin, Ghislain Durif
 
-<small>Statistics,  <br/>
-CNRS, Institut de Mathématiques de Toulouse</small>
+<small>IR CNRS<br/>
+IMAG Montpellier, ENS LYON</small>
 
-![](img/pierre.jpg){width='180'}
+![](../people/fradav.jpg){width='120'}![](../people/ghislain.jpg){width='120'} 
 
 :::
 
-::: {.column width="50%"}
-
-#### Julien Chiquet (Chief Editor)
-
-<small>Statistical learning for life science<br />
-Université Paris-Saclay, AgroParisTech, INRAE</small>
-
-![](img/julien.jpg){width='180'}
-
+::: {.column width="30%"}
 
 #### Nelle Varoquaux
 
-<small>Machine learning and causal inference for genomics<br/>
-CNRS, Université Grenoble Alpes</small>
+<small>Machine learning for genomics<br/>
+CR CNRS, Université Grenoble Alpes</small>
 
-![](img/nelle.jpg){width='180'} 
+![](../people/nelle.jpg){width='120'} 
+
+#### Pierre Neuvial
+
+<small>Statistique, DR CNRS<br/>
+Institut de Math de Toulouse</small>
+
+![](../people/pierre.jpg){width='120'}
+
+:::
+
+::: {.column width="30%"}
+
+#### Mathurin Massias
+
+<small>Optimisation et Machine-Learning<br/>
+CR INRIA, Lyon</small>
+
+![](../people/mathurin.jpg){width='120'} 
+
+#### Chloé-Agathe Azencott
+
+<small>Machine Learning <br/>
+CR MinesParisTech, Institut Curie</small>
+
+![](../people/chloe.jpg){width='120'} 
 
 :::
 
 ::::
 
-##
+## Origine (~ 2020s)
 
-![](img/computo_website.png)
-
-
-## Facts in Stats/ML academic publications
-
-- Multiplication of academic journals and articles <br/>
-    *&#8594;	at the expense of quality / scientific accuracy?*
-- Lack of valorisation of computer/algorithmic developments and case studies
-- Saturation of existing solutions
-- Rapid evolution of tools 
-  - Great API (`Rstudio`, `VScode`)
-  - Scientific Publishing system (`quarto`, `Jupyter`)
-  - Integration / dynamics (`git(hub)`, `Actions`)
-
-::: {.callout-tip}
-## Computo's Board Positioning
-**Need to renew the mode of publication of scientific knowledge and know-how**
-::: 
-
-## Existing solutions
-
-### Standard academic journals
-
-*Statistics and Computing, Computational Statistics and Data Analysis, Journal of Computational and Graphical Statistics, JMLR, JRSS-B, JASA, ...*
-
-::: {.callout-warning}
-### Limitations
-Fixed format (non-dynamic typically, PDF) limiting reproducibility
-:::
-
-
-### Software journals
-
-*R journal, Journal of Statistical Software, Journal of Open Source Software, JMLR Machine Learning Open Source Software, ROpen-Sci...*
-
-::: {.callout-warning}
-### Limitations
-Congestion, language-centric, software documentation, not structured around a scientific question
-:::
-
-## Computo in a nutshell
+ La Société Française de Statistique missionne une cellule "publication" (J. Chiquet puis P. Neuvial) pour faire émerger une revue d'envergure internationale
 
 ::: {.callout-note}
-### Aims and Scope
-*Promote contributions in statistics and machine learning that provide insight into which models/methods are the most appropriate to a specific question.*
+## Constat
+
+Multiplication des journaux "traditionnels"...
+
+😔 dévalorisation des résultats négatifs
+
+😥 peu/pas assez de valorisation du code et des études de cas
+
+😱 &darr; de la qualité des publication et du temps consacré à un article
+
+😱 &darr; de la reproductibilité _scientifique_ (analyses, expériences)
+
+::: 
+
+::: {.callout-tip}
+## Point de vue
+- besoin de renouvellement de la mise en œuvre de la recherche scientifique
+- besoin de normes plus élevées en matière de publication des résultats
+::: 
+
+$\rightsquigarrow$ Émergence de l'idée de Computo
+
+## Philosophie
+
+::: {.callout-note}
+
+### Périmètre scientifique
+**Promouvoir les contributions en statistique et machine-learning permettant d'évaluer la pertinence d'un modèle/d'une méthode vis-à-vis d'une question scientifique spécifique**
 :::
 
 ::: {.callout-tip}
-### Open and reproducible 
-- reproducibility of numerical results is a necessary condition for publication
-- all necessary data and code must be available. 
-- reviews are open (reviewers can remain anonymous)
+### Ouvert
+
+- Open accès "diamant" (gratuité totale et réutilisation possible)
+- 🅭 🅯 Contenu publié sous licence CC-BY (crédit, modification)
+- Rapports de lecture et discussions disponibles après acceptation (relecteurs anonymes)
+
+$\rightsquigarrow$ En accord avec le [Budapest Open Access Initiative (BOAI)](https://www.budapestopenaccessinitiative.org/)  and le [Plan S](https://www.coalition-s.org/addendum-to-the-coalition-s-guidance-on-the-implementation-of-plan-s/principles-and-implementation/)
 :::
 
 
 ::: {.callout-important}
-### Assessing reproducibility
-**At the submission stage!**
+### Reproductible
+- La reproductibilité numérique des résultats est une condition nécessaire 
+- Code et données doivent être disponibles, pour partie exécuté et intégralement exécutable
 :::
 
-## How does Computo work? (1/3)
+## Mise en place
 
-![](img/computo_github-group.png)
+Lancement officiel fin 2021
+
+[![](img/computo_website.png){height=300px}](https://computo.sfsds.asso.fr)
+[![](img/computo_github-group.png){height=300px}](https://computorg.github.io)
+
+### Modèle "économique"
+
+- Quelques acharné.e.s
+- Outils de la communauté
+- Soutiens Institutionnels (INRAE, CNRS, SFdS)
+
+## Fonctionnement
+
+:::: {.columns}
+
+::: {.column width="65%"}
+
+### Système d'écriture
+
+texte (markdown) + math ($\LaTeX$) + code (Python/R/Julia), biblio (bib$\TeX$)
+
+### Système de publication
+
+Gestion de l'environnement, Compilation, Publication multiformats
+
+### Système de relecture
+
+- Échanges anonymes publiés après acceptation
+- Bases de relecteurs/relectrices
+- _Passage de Scholastica à Open review en cours_
+:::
+
+::: {.column width="35%"}
+
+### Solutions/Proto
+
+Expérience renouvellée
+
+[![](img/quarto.png){height=40px}](https://quarto.org)
+
+Reproductibilité éditoriale
+
+[![](img/github_actions.png){height=80px}](https://github.com/features/actions)
+
+Validation scientifique 
+
+[![](img/openreview.png){height=80px}](https://openreview.net/)
 
 
-## How does Computo work? (2/3)
+:::
 
-### 1. Advanced notebook System
+::::
 
-[https://quarto.org](https://quarto.org) (embed *Jupyter* and *RMarkdown*)
+## Les outils de l'auteur.e
 
-  - Code (Python/Julia/R)
-  - Math ($\LaTeX$)
-  - Biblio ($bibTeX$)
-  - Interactivity (HTML widget, CSS) 
+:::: {.columns}
 
-### 2. Git repository and services
+::: {.column width="50%"}
 
-[github/github-action](https://github.com/features/actions)
+### Modèle de document
 
-  - Continuous Integration (reproducibility script)
-  - Projects Management (submission, publication)
-  - Issues (reviewing, discussion)
+[Extension `quarto` Computo](https://computorg.github.io/computo-quarto-extension/)
+![](img/computo_repo_quarto_extension.png){heitgh=200px}
 
-## How does Computo work? (3/3)
+:::
 
-### 3. Container service
+::: {.column width="50%"}
 
-[binder](https://mybinder.readthedocs.io/)
+### Modèle de soumission
 
-  - Easy to customize
-  - Easy to interface with github
+[Des dépôts `template` github](https://computo.sfds.asso.fr/repos/)
 
-### 4. Reviewing system
+modèles de document + doc + services de publication pré-configurés
 
-[Scholastica](https://app.scholasticahq.com/)
+![](img/computo_template_repositories.png)
 
-  - Discussion among Editorial board
-  - Reviewer Invitation
-  - Anonymous exchanges between authors/reviewers 
+:::
 
-&#8594; Eventually published (as Issues)
+::::
 
-## Author point of view (1/4)
+### En local
 
-### Step 0: setup a github repository
+:::: {.columns}
 
-Copy [our template repository](https://github.com/computorg/template-computo-quarto) to use it as a starter
+::: {.column width="50%"}
 
-![](img/computo_template-quarto-screenshot_1.png)
+- Éditeur (VS Code, Rstudio, NeoVim) 
+- Quarto (compilation)
 
-## Author point of view (2/4)
+::: 
 
-### Step 1. write your contribution
+::: {.column width="50%"}
 
-Write your notebook as usual (Same spirit as Jupyter/Rmarkdown).
+- Julia / R / Python
+- gestionnaire de version git
 
-### Step 2: configure your conda/binder environment
+::: 
 
-file `environment.yml`
+::::
+
+## Point de vue l'auteur.e (1/3)
+
+### Step 0: mise en place d'un dépôt git
+
+Clone d'un des [dépôts template (R, Python Julia)](https://github.com/computorg/template-computo-python) pour commencer
+
+### Step 1. Écriture de l'article
+
+À vous de jouer, en local (même esprit qu'en Jupyter/Rmarkdown)
+
+### Step 2: configuration de l'environnement
+
+::: {.panel-tabset}
+
+#### Example en Python
+
+`venv`: fichier `requirement.txt`
 
 ```yaml
-name: computorbuild
-channels:
-  - conda-forge
-dependencies:
-  - jupyter
-  - numpy
-  - r-base=4.2.0
+jupyter
+matplotlib
+numpy
 ```
 
-## Author point of view (3/4)
+Le fichier `requirements.txt` est versionné et utilisé dans l'action de compilation/publication
 
-### Step 3: proof reproducibility
 
-A `git push` will trigger build process on github
+#### Example en R
+
+`renv`: générer le fichier `renv.lock` à l'aide du package dédié
+
+```r
+renv::init()
+renv::install("ggplot2") # or equivalently install.packages("ggplot2")
+renv::snapshot()
+```
+
+Le fichier `renv.lock` est versionné et utilisé dans l'action de compilation/publication
+
+#### Example en Julia
+
+`Pkg`: gestionnaire de package natif de `Julia`
+
+```julia
+add Plots;
+add IJulia
+```
+
+Les fichiers `Project.toml` et `Manifest.toml` sont générés et versionnés et utilisés dans l'action de compilation/publication
+
+:::
+
+## Point de vue de l'auteur.e (2/3)
+
+### Step 3: reproductibilité
+
+Un `git push` lancera l'action dédiée à la compilation et la publication
 ``` yaml
 name: build
 on: push
 jobs:
-  computorticle:
+  build-deploy:
     runs-on: ubuntu-latest
-    steps: # [...]
-      - name: Installing dependencies with Miniconda
-        uses: conda-incubator/setup-miniconda@v2
-          environment-file: environment.yml
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: Set up quarto
+        uses: quarto-dev/quarto-actions/setup@v2
         # [...]
-      - name: Rendering with Quarto
-        run: quarto render content.qmd
+
+      - name: Install Computo extension for Quarto
+        run: |
+            quarto add --no-prompt computorg/computo-quarto-extension
+            
+      - name: Install Python and Dependencies
+        uses: actions/setup-python@v4
         # [...]
-      - name: Deploying article on github pages
+      - run: pip install -r requirements.txt
+
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
         # [...]
 ```        
 
-## Author point of view (4/4)
+## Point de vu de l'auteur.e (3/3)
 
-### Step 4. submit
+:::: {.columns}
 
-If the build process is successful,
+::: {.column width="60%"}
 
-  - An HTML version is pushed on a github-page
-  - A PDF version can be obtained via `chrome-print`
-  - a `binder` repos can be associated
+### Step 4. Soumission
+
+Si le processus d'action a fonctionné, un 
+
+- document HTML et une version PDF sous publiée [sur la github-page associé au dépôt](https://computo.sfds.asso.fr/template-computo-python/)
 
 ::: {.highlight-red}
-&#8594; Submit the PDF on Scholastica page
+&#8594; Dépôt manuel du PDF et de l'adresse du dépôt git sur <s>Scholastica</s> Open review
 :::
 
-::: {style="text-align: center; margin-top: 1em"}
-[See our quarto template for more](https://github.com/computorg/template-computo-quarto){preview-link="true" style="text-align: center"}
 :::
 
-## Editor point of view
+::: {.column width="38%"}
 
-Once the reviewing process has ended (successfully!)
+![](img/computo_template_rendered.png)
 
-- Copy the author's repository
-- Format to the final version
-- Publish reviews as issues
-- Add entry on the Journal web site referring
-  - github repository
-  - data repository
-  - reviewing
-
-::: {style="text-align: center; margin-top: 1em"}
-[See our mock contribution for more](https://computo.sfds.asso.fr/publications/){preview-link="true" style="text-align: center"}
 :::
 
-## First published paper
+::::
 
-<https://github.com/computorg/published-202204-deeplearning-occupancy-lynx>
+## Point de vue de l'éditeur
 
-![](img/computo_repo-published.png)
+:::: {.columns}
 
-## Computo's first year review  {.smaller}
+::: {.column width="70%"}
 
-- framework functional + doi, ISSN, etc.
-- 1 published article, 3 articles under review, 2 or 3 promises of submissions
-- 4 talks in reproducibility workshops (Montpellier, Toronto, Humastica, IHP)
-- difficulty to find reviewers
-- neither technical nor human support
+Une fois le processus de relecture "traditionnel" achevé, un processus  en 3 phases
 
-### About the Logo
+1. Acceptation
+2. Pré-production
+3. Publication
+
+incluant 
+
+- Copie du dépôt de l'auteur.e
+- Mise en forme de la version finale
+- Publication des rapports de relecteurs
+- Entrée dans la base bibliograhique du journal
+- Copie sur Software Heritage
+
+:::
+
+::: {.column width="28%"}
+
+[Task-list = Issue Github](https://github.com/computorg/published-paper-tsne/issues/5)
+
+![](img/computo_template_issue_editor.png)
+
+:::
+
+::::
+
+## Bilan après un an et demi de fonctionnement
+
+<br/>
+
+🥲 Processus opérationnel + doi, ISSN
+
+🙂 4 articles publiés, 6 articles en cours de relecture
+
+🙂 4 workshop présentations in reproducibility workshops (Montpellier, Toronto, Humastica, Grenoble)
+
+🤔 Support institutionnel (projet FNSO): coûteux en temps 
+
+🤯 Difficulté à trouver des relecteurs
+
+### Comment aider?
+
+- [En soumettant vos travaux!](https://computo.sfds.asso.fr/submit/)
+
+- En se proposant **relecteur/relectrice**  <https://forms.gle/P9iYJANuNM4WTVHDA>
+
+
+## Éléments de discussion
+
+### Sur certains choix
+
+- `quarto`: dynamique, langage agnostique, issu de la communauté (pandoc)
+- `Github`: dynamique, lien avec `quarto`, pas institutionnel
+
+### Perpectives
+
+- Mise à disposition de moyens computationnels
+- Support Gitlab complet
+
+### Positionement/inspiration
+
+- [Peer Community-In](https://peercommunityin.org/), [EpiSciences](https://www.episciences.org/) : philosophie différente
+- <https://rescience.github.io/> : "remake' de l'existant
+- <https://distill.pub> : techniquement compliqué et pur IA
+
+## À propos du logo
 
 ![](img/computo_concept.png)
 
-## How could you help?
-
-### Authoring
-
-[Submit your work!](https://computo.sfds.asso.fr/submit/)
-
-### Reviewing
-
-**Volunteer** by filling this form: <https://forms.gle/P9iYJANuNM4WTVHDA>
-
-### Feeding-in Computo with Peer-community-in
-
-*Get involved in a stat/ML PCI to feed Computo*
-
-- Existing skeleton: *CompStat* PCI <https://compstat.peercommunityin.org/>
-- Identified scientific leader: Christian Robert
-- Technical/Web support **needed**
-- Active community of recommenders **needed**
-
-
-<!-- ## About the Logo -->
-
-<!-- ![](img/computo_concept.png) -->
-
-<!-- Computo’s logo has been designed by [Loïc Schwaller](https://loack.me/). -->
+Computo’s logo has been designed by [Loïc Schwaller](https://loack.me/)
