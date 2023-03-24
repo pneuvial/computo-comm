@@ -234,19 +234,19 @@ modèles de document + doc + services de publication pré-configurés
 
 ## Point de vue l'auteur.e (1/3)
 
-### Step 0: mise en place d'un dépôt git
+### Étape 0: mise en place d'un dépôt git
 
 Clone d'un des [dépôts template (R, Python Julia)](https://github.com/computorg/template-computo-python) pour commencer
 
-### Step 1. Écriture de l'article
+### Étape 1. Écriture de l'article
 
 À vous de jouer, en local (même esprit qu'en Jupyter/Rmarkdown)
 
-### Step 2: configuration de l'environnement
+### Étape 2: configuration de l'environnement
 
 ::: {.panel-tabset}
 
-#### Example en Python
+#### Exemple en Python
 
 `venv`: fichier `requirement.txt`
 
@@ -259,7 +259,7 @@ numpy
 Le fichier `requirements.txt` est versionné et utilisé dans l'action de compilation/publication
 
 
-#### Example en R
+#### Exemple en R
 
 `renv`: générer le fichier `renv.lock` à l'aide du package dédié
 
@@ -271,7 +271,7 @@ renv::snapshot()
 
 Le fichier `renv.lock` est versionné et utilisé dans l'action de compilation/publication
 
-#### Example en Julia
+#### Exemple en Julia
 
 `Pkg`: gestionnaire de package natif de `Julia`
 
@@ -286,7 +286,7 @@ Les fichiers `Project.toml` et `Manifest.toml` sont générés et versionnés et
 
 ## Point de vue de l'auteur.e (2/3)
 
-### Step 3: reproductibilité
+### Étape 3: reproductibilité
 
 Un `git push` lancera l'action dédiée à la compilation et la publication
 ``` yaml
@@ -317,21 +317,20 @@ jobs:
         # [...]
 ```        
 
-## Point de vu de l'auteur.e (3/3)
+## Point de vue de l'auteur.e (3/3)
 
 :::: {.columns}
 
 ::: {.column width="60%"}
 
-### Step 4. Soumission
+### Étape 4: soumission
 
 Si le processus d'action a fonctionné, un 
 
 - document HTML et une version PDF sous publiée [sur la github-page associé au dépôt](https://computo.sfds.asso.fr/template-computo-python/)
-
-::: {.highlight-red}
-&#8594; Dépôt manuel du PDF et de l'adresse du dépôt git sur <s>Scholastica</s> Open review
-:::
+- Dépôt manuel sur <s>Scholastica</s> Open review
+  - du PDF 
+  - de l'adresse du dépôt git 
 
 :::
 
@@ -383,18 +382,34 @@ incluant
 
 🙂 4 articles publiés, 6 articles en cours de relecture
 
-🙂 4 workshop présentations in reproducibility workshops (Montpellier, Toronto, Humastica, Grenoble)
+🙂 4 présentations (Montpellier, Toronto, Humastica, Grenoble)
 
 🤔 Support institutionnel (projet FNSO): coûteux en temps 
 
 🤯 Difficulté à trouver des relecteurs
 
+<br/>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
 ### Comment aider?
 
 - [En soumettant vos travaux!](https://computo.sfds.asso.fr/submit/)
+- En se proposant **relecteur/relectrice**
 
-- En se proposant **relecteur/relectrice**  <https://forms.gle/P9iYJANuNM4WTVHDA>
+:::
 
+::: {.column width="50%"}
+
+### À propos du logo
+
+![](img/computo_concept.png){width=300px}
+
+:::
+
+:::: 
 
 ## Éléments de discussion
 
@@ -414,8 +429,3 @@ incluant
 - <https://rescience.github.io/> : "remake' de l'existant
 - <https://distill.pub> : techniquement compliqué et pur IA
 
-## À propos du logo
-
-![](img/computo_concept.png)
-
-Logo conçu par [Loïc Schwaller](https://loack.me/)
