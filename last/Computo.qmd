@@ -1,6 +1,6 @@
 ---
 title: "COMPUTO"
-subtitle: "Un journal académique en Statistique et Machine-Learrning promouvant la reproductibilité et les modes de publication alternatifs"
+subtitle: "Un journal académique en Statistique et Machine-Learning promouvant la reproductibilité et les modes de publication alternatifs"
 footer: <https://computo.sfds.asso.fr>
 logo: img/logo_text_vertical.png
 date: last-modified
@@ -33,7 +33,7 @@ DR INRAE, Université Paris-Saclay</small>
 
 #### François-David Collin, Ghislain Durif
 
-<small>IR CNRS<br/>
+<small>Informatique Statistique, IR CNRS<br/>
 IMAG Montpellier, ENS LYON</small>
 
 ![](../people/fradav.jpg){width='120'}![](../people/ghislain.jpg){width='120'} 
@@ -91,7 +91,7 @@ Multiplication des journaux "traditionnels"...
 
 😥 peu/pas assez de valorisation du code et des études de cas
 
-😱 &darr; de la qualité des publication et du temps consacré à un article
+😱 &darr; de la qualité des publications et du temps consacré à un article
 
 😱 &darr; de la reproductibilité _scientifique_ (analyses, expériences)
 
@@ -110,7 +110,7 @@ $\rightsquigarrow$ Émergence de l'idée de Computo
 ::: {.callout-note}
 
 ### Périmètre scientifique
-**Promouvoir les contributions en statistique et machine-learning permettant d'évaluer la pertinence d'un modèle/d'une méthode vis-à-vis d'une question scientifique spécifique**
+**Promouvoir les contributions en statistique et machine-learning permettant d'évaluer la pertinence d'un modèle et des méthodes associées vis-à-vis d'une question scientifique spécifique**
 :::
 
 ::: {.callout-tip}
@@ -161,7 +161,7 @@ Gestion de l'environnement, Compilation, Publication multiformats
 
 - Échanges anonymes publiés après acceptation
 - Bases de relecteurs/relectrices
-- _Passage de Scholastica à Open review en cours_
+- [_Passage de Scholastica à Open review en cours_]
 :::
 
 ::: {.column width="35%"}
@@ -358,9 +358,9 @@ incluant
 
 - Copie du dépôt de l'auteur.e
 - Mise en forme de la version finale
-- Publication des rapports de relecteurs
+- Publication des rapports de relecteurs/trices
 - Entrée dans la base bibliograhique du journal
-- Copie sur Software Heritage
+- Copie sur [Software Heritage](https://archive.softwareheritage.org/browse/search/?q=computorg%2Fpublished&with_visit=true&with_content=true)
 
 :::
 
@@ -384,9 +384,9 @@ incluant
 
 🙂 4 présentations (Montpellier, Toronto, Humastica, Grenoble)
 
-🤔 Support institutionnel (projet FNSO): coûteux en temps 
-
 🤯 Difficulté à trouver des relecteurs
+
+🤔 Support institutionnel ?
 
 <br/>
 
