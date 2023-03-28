@@ -134,8 +134,8 @@ $\rightsquigarrow$ En accord avec le [Budapest Open Access Initiative (BOAI)](ht
 
 Lancement officiel fin 2021
 
-[![](img/computo_website.png){height=300px}](https://computo.sfsds.asso.fr)
-[![](img/computo_github-group.png){height=300px}](https://computorg.github.io)
+[![](img/computo_website.png){height=300px}](https://computo.sfds.asso.fr)
+[![](img/computo_github-group.png){height=300px}](https://github.com/computorg/)
 
 ### Modèle "économique"
 
@@ -194,7 +194,7 @@ Validation scientifique
 ### Modèle de document
 
 [Extension `quarto` Computo](https://computorg.github.io/computo-quarto-extension/)
-![](img/computo_repo_quarto_extension.png){heitgh=200px}
+[![](img/computo_repo_quarto_extension.png){heitgh=200px}](https://github.com/computorg/computo-quarto-extension)
 
 :::
 
@@ -206,7 +206,7 @@ Validation scientifique
 
 modèles de document + doc + services de publication pré-configurés
 
-![](img/computo_template_repositories.png)
+[![](img/computo_template_repositories.png)](https://computo.sfds.asso.fr/repos/)
 
 :::
 
@@ -327,7 +327,7 @@ jobs:
 
 Si le processus d'action a fonctionné, un 
 
-- document HTML et une version PDF sous publiée [sur la github-page associé au dépôt](https://computo.sfds.asso.fr/template-computo-python/)
+- document HTML et une version PDF sous publiée [sur la github-page associé au dépôt](https://github.com/computorg/template-computo-python/)
 - Dépôt manuel sur <s>Scholastica</s> Open review
   - du PDF 
   - de l'adresse du dépôt git 
@@ -336,7 +336,7 @@ Si le processus d'action a fonctionné, un
 
 ::: {.column width="38%"}
 
-![](img/computo_template_rendered.png)
+[![](img/computo_template_rendered.png)](https://github.com/computorg/template-computo-python/)
 
 :::
 
@@ -368,7 +368,7 @@ incluant
 
 [Task-list = Issue Github](https://github.com/computorg/published-paper-tsne/issues/5)
 
-![](img/computo_template_issue_editor.png)
+[![](img/computo_template_issue_editor.png)](https://github.com/computorg/published-paper-tsne/issues/5)
 
 :::
 
