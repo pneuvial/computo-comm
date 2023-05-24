@@ -8,6 +8,7 @@ lang: fr
 format: 
   revealjs: 
     self-contained: true
+    scrollable: true
     theme: [default, computo.scss]
     slide-number: true
     smaller: true
@@ -236,7 +237,9 @@ modèles de document + doc + services de publication pré-configurés
 
 ### Étape 0: mise en place d'un dépôt git
 
-Clone d'un des [dépôts template (R, Python Julia)](https://github.com/computorg/template-computo-python) pour commencer
+Utilisation d'un des dépôts template ([R](https://github.com/computorg/template-computo-R), [Python](https://github.com/computorg/template-computo-python), [Julia](https://github.com/computorg/template-computo-julia)) pour commencer
+
+[![](img/computo_use_template.png){height=80px}](https://github.com/computorg/template-computo-python)
 
 ### Étape 1. Écriture de l'article
 
