@@ -1,6 +1,6 @@
 ---
 title: "COMPUTO"
-subtitle: "Un journal académique en Statistique et Machine-Learning promouvant la reproductibilité et les modes de publication alternatifs <br/><br/> <small><https://github.com/computorg/RR2023></small>"
+subtitle: "Un journal académique en statistique et machine-learning promouvant la reproductibilité et les modes de publication alternatifs <br/><br/> <small><https://github.com/computorg/RR2023></small>"
 footer: <https://computo.sfds.asso.fr>
 logo: img/logo_text_vertical.png
 date: last-modified
