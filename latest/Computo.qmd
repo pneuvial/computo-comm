@@ -1,14 +1,15 @@
 ---
 title: "COMPUTO"
-subtitle: "Un journal académique en Statistique et Machine-Learning promouvant la reproductibilité et les modes de publication alternatifs"
+subtitle: "Un journal académique en Statistique et Machine-Learning promouvant la reproductibilité et les modes de publication alternatifs <br/><br/> <small><https://github.com/computorg/RR2023></small>"
 footer: <https://computo.sfds.asso.fr>
 logo: img/logo_text_vertical.png
 date: last-modified
+date-format: long
 lang: fr
 format: 
   revealjs: 
     self-contained: true
-    scrollable: true
+    scrollable: false
     theme: [default, computo.scss]
     slide-number: true
     smaller: true
@@ -23,16 +24,16 @@ format:
 
 :::: {.columns}
 
-::: {.column width="38%"}
+::: {.column width="33%"}
 
 #### Julien Chiquet (Éditeur en chef)
 
-<small>Apprentissage stat. pour le vivant<br />
-DR INRAE, Université Paris-Saclay</small>
+<small>Apprentissage stat., DR INRAE<br />
+Université Paris-Saclay</small>
 
 ![](../people/julien.jpg){width='120'}
 
-#### François-David Collin, Ghislain Durif
+#### Fra.-Dav. Collin, Ghislain Durif
 
 <small>Informatique Statistique, IR CNRS<br/>
 IMAG Montpellier, ENS LYON</small>
@@ -41,39 +42,51 @@ IMAG Montpellier, ENS LYON</small>
 
 :::
 
-::: {.column width="30%"}
-
-#### Nelle Varoquaux
-
-<small>Machine learning for genomics<br/>
-CR CNRS, Université Grenoble Alpes</small>
-
-![](../people/nelle.jpg){width='120'} 
+::: {.column width="22%"}
 
 #### Pierre Neuvial
 
 <small>Statistique, DR CNRS<br/>
-Institut de Math de Toulouse</small>
+IMT Toulouse</small>
 
 ![](../people/pierre.jpg){width='120'}
 
+#### Marie-Pierre Étienne
+
+<small>Statistique, MCF<br/>
+AgroCampusOuest</small>
+
+![](../people/marie-pierre.jpg){width='120'} 
+
 :::
 
-::: {.column width="30%"}
+::: {.column width="22%"}
 
 #### Mathurin Massias
 
-<small>Optimisation et Machine-Learning<br/>
-CR INRIA, Lyon</small>
+<small>Optim./Machine-Learning<br/>
+CR INRIA Lyon</small>
 
 ![](../people/mathurin.jpg){width='120'} 
 
-#### Chloé-Agathe Azencott
+#### Chloé Azencott
 
 <small>Machine Learning <br/>
-CR MinesParisTech, Institut Curie</small>
+CR MinesParisTech</small>
 
 ![](../people/chloe.jpg){width='120'} 
+
+:::
+
+::: {.column width="22%"}
+
+#### Nelle Varoquaux
+
+<small>Machine learning, CR CNRS<br/>
+Université Grenoble Alpes</small>
+
+![](../people/nelle.jpg){width='120'} 
+
 
 :::
 
@@ -81,7 +94,7 @@ CR MinesParisTech, Institut Curie</small>
 
 ## Origine (~ 2020s)
 
- La Société Française de Statistique missionne une cellule "publication" (J. Chiquet puis P. Neuvial) pour faire émerger une revue d'envergure internationale
+ La Société Française de Stat. missionne une cellule "publication" (Julien puis Pierre) pour faire émerger une nouvelle revue
 
 ::: {.callout-note}
 ## Constat
@@ -140,9 +153,9 @@ Lancement officiel fin 2021
 
 ### Modèle "économique"
 
-- Quelques acharné.e.s
-- Outils de la communauté
-- Soutiens Institutionnels (INRAE, CNRS, SFdS)
+- Quelques acharné.e.s (quelques ulcères)
+- Outils de la communauté (Pandoc, Quarto, GitHub/lab)
+- Soutiens Institutionnels (INRAE, INRIA, CNRS, SFdS)
 
 ## Fonctionnement
 
@@ -237,9 +250,7 @@ modèles de document + doc + services de publication pré-configurés
 
 ### Étape 0: mise en place d'un dépôt git
 
-Utilisation d'un des dépôts template ([R](https://github.com/computorg/template-computo-R), [Python](https://github.com/computorg/template-computo-python), [Julia](https://github.com/computorg/template-computo-julia)) pour commencer
-
-[![](img/computo_use_template.png){height=80px}](https://github.com/computorg/template-computo-python)
+Démarrage à l'aide d'un dépôt template ([R](https://github.com/computorg/template-computo-R), [Python](https://github.com/computorg/template-computo-python), [Julia](https://github.com/computorg/template-computo-julia)) [![](img/computo_use_template.png){height=20px}](https://github.com/computorg/template-computo-python)
 
 ### Étape 1. Écriture de l'article
 
@@ -328,18 +339,26 @@ jobs:
 
 ### Étape 4: soumission
 
-Si le processus d'action a fonctionné, un 
+Si le processus d'action a fonctionné, un document HTML et une version PDF sous publiée [sur la github-page associé au dépôt](https://github.com/computorg/template-computo-python/)
 
-- document HTML et une version PDF sous publiée [sur la github-page associé au dépôt](https://github.com/computorg/template-computo-python/)
-- Dépôt manuel sur <s>Scholastica</s> Open review
-  - du PDF 
-  - de l'adresse du dépôt git 
+<br/><br/>
+
+#### <s>Scholastica</s> Open review 
+
+<https://openreview.net/group?id=Computo>
+
+Dépôt
+
+  - du PDF (relecture contenu scientifique)
+  - de l'adresse du dépôt git (reproductibilité)
 
 :::
 
 ::: {.column width="38%"}
 
 [![](img/computo_template_rendered.png)](https://github.com/computorg/template-computo-python/)
+
+[![](img/computo_openreview.png)](https://openreview.net/group?id=Computo)
 
 :::
 
@@ -383,9 +402,11 @@ incluant
 
 🥲 Processus opérationnel + doi, ISSN
 
-🙂 4 articles publiés, 6 articles en cours de relecture
+🙂 4 articles publiés, 4 en révision, 3 en relecture
 
-🙂 4 présentations (Montpellier, Toronto, Humastica, Grenoble)
+🙂 x présentations (Montpellier, Toronto, Humastica, Grenoble, RR2023)
+
+🙂 [Réseau français Science Reproductible](https://www.recherche-reproductible.fr/)
 
 🤯 Difficulté à trouver des relecteurs
 
@@ -424,7 +445,7 @@ incluant
 ### Perpectives
 
 - Mise à disposition de moyens computationnels
-- Support Gitlab complet
+- Support Gitlab complet (CI, docker, registre, etc.)
 
 ### Positionement/inspiration
 
