@@ -1,6 +1,6 @@
 ---
 title: "Computo"
-subtitle: "Un journal en Statistique et Apprentissage promouvant la reproductibilité<br/><br/> <small><https://github.com/computorg/RR2023></small><br/><small>Colloque \"Reproductibilité et Réplicabilité de la recherche: enjeux et propositions\"</small>"
+subtitle: "Un journal en Statistique et Apprentissage promouvant la rep([a-z]+)bilité<br/><br/> <small>Colloque \"Reproductibilité et Réplicabilité de la recherche: enjeux et propositions\"</small>"
 footer: <https://computo.sfds.asso.fr>
 logo: img/logo_text_vertical.png
 date: "2023-09-08"
@@ -33,7 +33,7 @@ Multiplication des journaux "traditionnels"
 
 😔 dévalorisation des résultats négatifs
 
-😥 peu/pas assez de valorisation du code et des études de cas
+😥 peu/pas assez de valorisation du code et d'études de comparaisons neutres
 
 😱 &darr; de la qualité des publications et du temps consacré à un article
 
@@ -63,14 +63,15 @@ Promouvoir les contributions en **statistique computationnelle ou apprentissage 
 - Contenu publié sous licence CC-BY (crédit, modification)
 - Rapports de lecture et discussions disponibles après acceptation (relecteurs anonymes)
 
-$\rightsquigarrow$ En accord avec le [Budapest Open Access Initiative (BOAI)](https://www.budapestopenaccessinitiative.org/)  and le [Plan S](https://www.coalition-s.org/addendum-to-the-coalition-s-guidance-on-the-implementation-of-plan-s/principles-and-implementation/)
+$\rightsquigarrow$ En accord avec le [Budapest Open Access Initiative (BOAI)](https://www.budapestopenaccessinitiative.org/)  et le [Plan S](https://www.coalition-s.org/addendum-to-the-coalition-s-guidance-on-the-implementation-of-plan-s/principles-and-implementation/)
 :::
 
 
 ::: {.callout-important}
 ### Un journal reproductible
-- La reproductibilité numérique des résultats est une condition nécessaire pour la publication
+- La reproductibilité numérique des résultats est une **condition nécessaire** pour la publication
 - Codes et données doivent être disponibles: les codes sont pour partie exécutés et intégralement exécutables
+- Archivage via Software Heritage
 :::
 
 ## Lancement officiel: fin 2021
@@ -80,9 +81,9 @@ $\rightsquigarrow$ En accord avec le [Budapest Open Access Initiative (BOAI)](ht
 
 ### Mise en place
 
-- Travail du futur comité éditorial
+- Travail du comité éditorial
 - Outils de la communauté (Pandoc, Quarto, gitHub/gilab)
-- Soutiens Institutionnels (INRAE, INRIA, CNRS, SFdS)
+- Soutiens institutionnels (INRAE, INRIA, CNRS, SFdS)
 
 ## Exemple
 
@@ -177,7 +178,7 @@ Un document maître contenant:
 
 ::: {.column width="65%"}
 
-### Reproductibilité éditoriale 
+### Reproductibilité
 
 Compilation $\Rightarrow$ article au format html et/ou pdf
 
@@ -212,7 +213,7 @@ Compilation $\Rightarrow$ article au format html et/ou pdf
 ::::
 
 
-## Bilan à 20 mois d'exitence
+## Bilan à 20 mois d'existence
 
 <br/>
 
@@ -230,19 +231,18 @@ Compilation $\Rightarrow$ article au format html et/ou pdf
 
 ## Éléments de discussion
 
-### Perspectives
+### Perspectives immédiates pour Computo
 
 - Développement à l'international
 - Vers plus de reproductibilité: besoin de moyens de calculs
 - Passage de github à gitlab (institutionnel)
 
-Question plus fondamentale: les "degrés de liberté du chercheur"
+### Ouverture
 
+- initiatives similaires dans d'autres domaines ?
+- valoriser la recherche sur les enjeux de reproductabilité/réplicabilité
+  - à intégrer dans les thèmes de la CID 55 : Sciences et données
 
-### Autres initiatives pertinentes
-
-- [Peer Community-In](https://peercommunityin.org/), [EpiSciences](https://www.episciences.org/) 
-- <https://rescience.github.io/>
 
 ## Comité éditorial et support technique {.smaller}
 
