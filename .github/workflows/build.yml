@@ -20,7 +20,7 @@ jobs:
         shell: bash -l {0}
         run: |
             mkdir _build
-            cd latest/
+            cd 20230908_CNRS/
             quarto render Computo.qmd
             mv Computo.html ../_build/index.html
 
